@@ -5,7 +5,10 @@ console.log(colorTest); // проверка на инициализацию об
 const color1 = new RGB (20,20,20)
 const color2 = new RGB ("20","20","20")
 
-console.log(color1.add(color2)); 
+let a = color2.add(color1)
+console.log(a)
+
+//console.log(color1.add(color2)); 
 // здесь у нас создается новый объект с новыми значениями. 
 //Т.к мы решили, что "ВСЕ математические операции должны возвращать НОВЫЙ объект, а не менять текущий."
 //Это значит, если мы пропишем console.log(color1) Мы заметим, что color1 останется с параметрами (20,20,20)
